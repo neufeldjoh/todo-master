@@ -13,6 +13,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+	Doku
+*/
 public class ToDoServlet extends HttpServlet {
     public static final String FIND_ALL_SERVLET_PATH = "/all";
     public static final String INDEX_PAGE = "/jsp/todo-list.jsp";
