@@ -4,10 +4,8 @@ apply plugin: 'sonar-runner'
 
 sonarRunner {
     sonarProperties {
-        property 'sonar.projectName', 'todo-master'
-        property 'sonar.projectDescription', 'A task management application'
 		property 'sonar.host.url', 'http://zephyr-slab.cs.upb.de:9000/'
-		property "sonar.jdbc.url", "jdbc:mysql://zephyr-slab.cs.upb.de"
+		property "sonar.jdbc.url", "jdbc:mysql://zephyr-slab.cs.upb.de:3306/sonar"
         property "sonar.jdbc.driverClassName", "com.mysql.jdbc.Driver"
         property "sonar.jdbc.username", "sonarcube"
         property "sonar.jdbc.password", 'SC$2015jn'
