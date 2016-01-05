@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
-	Doku
+	Dokumentation
 */
 public class ToDoServlet extends HttpServlet {
     public static final String FIND_ALL_SERVLET_PATH = "/all";
