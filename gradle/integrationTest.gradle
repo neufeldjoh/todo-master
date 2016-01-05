@@ -20,9 +20,3 @@ task integrationTest(type: Test) {
 }
 
 check.dependsOn integrationTest
-
-sonarRunner {
-    sonarProperties {
-        properties['sonar.tests'] += sourceSets.integrationTest.allSource.srcDirs
-    }
-}
