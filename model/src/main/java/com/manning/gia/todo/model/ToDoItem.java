@@ -1,7 +1,8 @@
 package com.manning.gia.todo.model;
 
 /**
-Dok
+Dok,
+Hallo
 */
 public class ToDoItem implements Comparable<ToDoItem> {
     private Long id;
