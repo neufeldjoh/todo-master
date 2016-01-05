@@ -1,6 +1,16 @@
 apply from: "$rootDir/gradle/envConfig.gradle"
 apply from: "$rootDir/gradle/versioning.gradle"
+apply plugin: 'sonar-runner'
 
+sonarRunner {
+    sonarProperties {
+		property 'sonar.host.url', 'http://zephyr-slab.cs.upb.de:9000/'
+		property "sonar.jdbc.url", "jdbc:mysql://zephyr-slab.cs.upb.de:3306/sonar"
+        property "sonar.jdbc.driverClassName", "com.mysql.jdbc.Driver"
+        property "sonar.jdbc.username", "sonarcube"
+        property "sonar.jdbc.password", 'SC$2015jn'
+    }
+}
 
 allprojects {
     apply plugin: 'idea'
@@ -23,6 +33,11 @@ subprojects {
         reports.junitXml.destination = file("$reports.junitXml.destination/unit")
     }
 
+    sonarRunner {
+        sonarProperties {
+            property 'sonar.sourceEncoding', 'UTF-8'
+        }
+    }
 }
 
 task wrapper(type: Wrapper) {
