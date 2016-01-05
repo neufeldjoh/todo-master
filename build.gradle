@@ -9,7 +9,7 @@ allprojects {
 
 subprojects {
     apply plugin: 'java'
-    apply from: "$rootDir/gradle/jacoco.gradle"
+    apply plugin: 'jacoco'
     
     ext.compatibilityVersion = '1.6'
     sourceCompatibility = compatibilityVersion
