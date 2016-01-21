@@ -23,7 +23,7 @@ button {
 body {
     font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.4em;
-    background: #eaeaea url('bg.png');
+    /*background: #eaeaea url('bg.png');*/
     color: #00FF00;
     width: 550px;
     margin: 0 auto;
@@ -138,7 +138,7 @@ body {
 #new-todo {
     padding: 16px 16px 16px 60px;
     border: none;
-    background: rgba(0, 0, 0, 0.02);
+    background: rgba(173,216,230);
     z-index: 2;
     box-shadow: none;
 }
