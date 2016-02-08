@@ -2,7 +2,7 @@ apply from: "$rootDir/gradle/integrationTest.gradle"
 
 dependencies {
     compile project(':model')
-	compile 'org.bouncycastle:bcprov-jdk16:1.45'
+	compile 'org.bouncycastle:bcprov-jdk15on:1.50'
     testCompile 'junit:junit:4.11'
 }
 
